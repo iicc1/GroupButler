@@ -80,33 +80,10 @@ local _M =
 		admin_mode = os.getenv('GB_ADMIN_MODE') == 'true' or false
 	},
 	plugins = {
-		'onmessage', --THIS MUST BE THE FIRST: IF AN USER IS FLOODING/IS BLOCKED, THE BOT WON'T GO THROUGH PLUGINS
-		'antispam', --SAME OF onmessage.lua
 		'backup',
-		'banhammer',
-		'block',
-		'configure',
-		'defaultpermissions',
-		'dashboard',
-		'floodmanager',
 		'help',
-		'links',
-		'logchannel',
-		'mediasettings',
-		'menu',
-		'moderators',
-		'pin',
-		'private',
-		'private_settings',
-		'report',
-		'rules',
-		'service',
 		'setlang',
-		'users',
-		'warn',
-		'welcome',
 		'admin',
-		'extra', --must be the last plugin in the list.
 	},
 	available_languages = {
 		['en'] = 'English 🇬🇧',
