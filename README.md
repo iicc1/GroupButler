@@ -108,7 +108,7 @@ You can easily install Group Butler by running the following commands:
 ```bash
 # Tested on Ubuntu 16.04
 
-$ wget https://raw.githubusercontent.com/iicc1/GroupButler_Base_API/master/launch.sh
+$ wget https://raw.githubusercontent.com/iicc1/GroupButler_Base_API/master/install.sh
 $ bash install.sh
 ```
 
