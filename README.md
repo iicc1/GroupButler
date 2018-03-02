@@ -42,7 +42,7 @@ LOG_ADMIN=12345678
 ```
 
 
-## Setup (using Docker)
+## Setup (this is for running with docker, I recommend you to use the other setup when using this Base_API fork, look below)
 Requirements:
 
 - docker 17.06.0-ce
@@ -139,8 +139,8 @@ $ cd ..
 # Clone the repository and give the launch script permissions to be executed
 # If you want to clone the beta branch, use git clone with the [-b beta] option
 
-$ git clone https://github.com/RememberTheAir/GroupButler.git
-$ cd GroupButler
+$ git clone https://github.com/iicc1/GroupButler_Base_API.git
+$ cd GroupButler_Base_API
 $ sudo chmod +x launch.sh
 ```
 
