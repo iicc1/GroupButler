@@ -22,7 +22,7 @@ BPurple='\033[1;35m'
 BCyan='\033[1;36m'
 Default='\033[0m'
 
-read -p "Do you want me to install Group Butler Bot? (Y/N): "
+read -p "Do you want me to install Butler Bot? (Y/N): "
 
 case $REPLY in [yY])
 	# Install Dependencies
@@ -54,11 +54,11 @@ case $REPLY in [yY])
 	fi
 
 	if [ ! -d .git ]; then
-		echo -en "${Green}Would you like to clone the source of GroupButler? (Y/N): ${Default}"
+		echo -en "${Green}Would you like to clone the source of Group Butler (Base Api fork)? (Y/N): ${Default}"
 		read REPLY
 		if [[ $REPLY == [yY] ]]; then
-			echo -en "${Orange}Fetching latest Group Butler source code\n${Default}"
-			git clone -b master https://github.com/RememberTheAir/GroupButler.git && cd GroupButler
+			echo -en "${Orange}Fetching latest Group Butler (Base Api fork) source code\n${Default}"
+			git clone -b master https://github.com/iicc1/GroupButler_Base_API.git && cd GroupButler_Base_API
 		fi
 	fi
 
@@ -71,6 +71,6 @@ case $REPLY in [yY])
 		fi
 	fi;
 
-	echo -en "${BGreen}Group Butler successfully installed! Change values in config file and run ${BRed}./launch.sh${BGreen}.${Default}";;
+	echo -en "${BGreen}Group Butler Base Api successfully installed! Change values in config file and run ${BRed}./launch.sh${BGreen}.${Default}";;
 	*) echo "Exiting...";;
 esac
